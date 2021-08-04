@@ -1,4 +1,4 @@
-# ATM-Locator-Spring-Boot-Hysterix-Eureka-Config-Actuator
+# ATM-Locator-Spring-Boot-Hysterix-Eureka-Config-Actuator-API-Gateway
 
  A Distributed Resilient Application to locate ATMs using Spring Cloud Netflix with Eureka (Service Discovery), Hystrix (Circuit Breaker), Spring Cloud Config (externalized configuration).
 
