@@ -9,10 +9,11 @@ Utilized spring initializer project to generate the basic code structure and arc
 - Configured Resttemplate calls with by-passing ssl for consuming ING web service ( https://www.ing.nl/api/locator/atms/ )
 - The ING web-service provides a malformed json response, containing a few garbage characters in the beginning, this was adjusted in the api and proper json response is parsed to populate Data Transfer Object's.
 - There is two Spring Profiles i.e. default and Security which has more Security built when passing ssl for consuming ING web service. 
+- THe API Gateway will be the single point of access to pass user requests into the Architecture
 
 How is the Architecture Designed ?
 
-A basic spring MVC design : We have designed the architecure using Three MicroServices i.e. ATM-Locator-Spring-Boot, Eureka-Server and Spring-Cloud-Server.  Request Callstack : Controller -> Service -> Repository and vice a versa for response.
+A basic spring MVC design : We have designed the architecure using Four MicroServices i.e. ATM-Locator-Spring-Boot, Eureka-Server, API Gateway and Spring-Cloud-Server.  Request Callstack : Controller -> Service -> Repository and vice a versa for response.
 
 Controllers :
 AtmController.java : exposes 2 rest api's 
