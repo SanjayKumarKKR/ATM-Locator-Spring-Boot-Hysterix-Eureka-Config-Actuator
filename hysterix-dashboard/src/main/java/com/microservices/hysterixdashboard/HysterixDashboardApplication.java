@@ -1,17 +1,17 @@
-package cloudconfig.io.SpringCloudServer;
+package com.microservices.hysterixdashboard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 @SpringBootApplication
-@EnableConfigServer
 @EnableEurekaClient
-public class SpringCloudServerApplication {
+@EnableHystrixDashboard
+public class HysterixDashboardApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudServerApplication.class, args);
+		SpringApplication.run(HysterixDashboardApplication.class, args);
 	}
 
 }
